@@ -1,11 +1,24 @@
 /*--Sidenav--*/
 .sidenav {
-    background-color: #f1f1f1;
+    color: #fff;
+    background-color: #0D0D0D;
+    opacity: 0.9;
     height: 100%;
 }
 
 .row.content {
     height: 100rem;
+}
+
+.name {
+    border: 3px solid #fff;
+    padding: 15px 0 15px 0;
+    margin: 35px 0 25px 0;
+    text-transform: uppercase;
+}
+
+.role {
+    margin-bottom: 25px;
 }
 
 /*--Dashboard--*/
