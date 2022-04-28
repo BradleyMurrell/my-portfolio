@@ -1,15 +1,4 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Resume v7.0.5 (https://startbootstrap.com/theme/resume)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap v5.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -107,7 +96,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
-  color: #343a40;
 }
 
 h1, .h1 {
@@ -237,7 +225,8 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  --bs-bg-opacity: 0.8;
+  color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity));
   text-decoration: underline;
 }
 a:hover {
@@ -3944,7 +3933,6 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #bd5d38;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -7718,8 +7706,8 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  --bs-text-opacity: 0.8;
+  color: rgba(var(--bs-info-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
@@ -7809,8 +7797,8 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+   --bs-bg-opacity: 0.8;
+   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-secondary {
@@ -11390,7 +11378,8 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  --bs-bg-opacity: 0.8;
+  background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity));
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
@@ -11413,8 +11402,9 @@ section.resume-section {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 5rem;
-  padding-bottom: 5rem;
-  max-width: 75rem;
+  padding-bottom: 20rem;
+  --bs-bg-opacity: 0.8;
+  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity))
 }
 section.resume-section .resume-section-content {
   width: 100%;
@@ -11428,7 +11418,7 @@ section.resume-section .resume-section-content {
 @media (min-width: 992px) {
   section.resume-section {
     padding-left: 3rem;
-    padding-right: 3rem;
+    padding-right: 25rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
