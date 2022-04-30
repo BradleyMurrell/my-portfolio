@@ -162,22 +162,16 @@ address {
   line-height: inherit;
 }
 
-ol,
-ul {
+ol, ul {
   padding-left: 2rem;
 }
 
-ol,
-ul,
-dl {
+ol, ul, dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-ol ol,
-ul ul,
-ol ul,
-ul ol {
+ol ol, ul ul, ol ul, ul ol {
   margin-bottom: 0;
 }
 
@@ -238,10 +232,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
-pre,
-code,
-kbd,
-samp {
+pre, code, kbd, samp {
   font-family: var(--bs-font-monospace);
   font-size: 1em;
   direction: ltr /* rtl:ignore */;
@@ -287,8 +278,7 @@ figure {
   margin: 0 0 1rem;
 }
 
-img,
-svg {
+img, svg {
   vertical-align: middle;
 }
 
@@ -309,12 +299,7 @@ th {
   text-align: -webkit-match-parent;
 }
 
-thead,
-tbody,
-tfoot,
-tr,
-td,
-th {
+thead, tbody, tfoot, tr, td, th {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
@@ -332,19 +317,14 @@ button:focus:not(:focus-visible) {
   outline: 0;
 }
 
-input,
-button,
-select,
-optgroup,
-textarea {
+input, button, select, optgroup, textarea {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
 
-button,
-select {
+button, select {
   text-transform: none;
 }
 
@@ -11288,17 +11268,7 @@ body {
     padding-left: 17rem;
   }
 }
-h1, .h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   text-transform: uppercase;
 }
 
